@@ -6,8 +6,7 @@ import Header from './Header'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-  
-    <Header/>
+    <Header />
     {/* <PortFolio/> */}
-  </>
+  </>,
 )
