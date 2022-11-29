@@ -1,0 +1,8 @@
+.pfFrontAni{
+    @apply  absolute bg-[#297363] z-30 flex flex-col items-center justify-center overflow-visible  h-screen w-full transition-all duration-700 ease-out;
+
+    & > .ani{
+        @apply  text-gray-200 text-3xl sm:text-5xl md:text-7xl font-serif font-extrabold  animate-bounce ;
+         
+    }
+}
