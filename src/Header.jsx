@@ -3,10 +3,10 @@ import FrontAni from './FrontAni'
 import './style/header.css'
 const Header = () => {
   const list = [
-    { name: 'About', link: './' },
-    { name: 'Contact', link: './' },
-    { name: 'Education', link: './' },
-    { name: 'Service', link: './' },
+    { name: 'ABOUT', link: './' },
+    { name: 'CONTACT', link: './' },
+    { name: 'EDUCATION', link: './' },
+    { name: 'SERVICE', link: './' },
   ]
   return (
     <>
@@ -23,7 +23,7 @@ const Header = () => {
             <ul>
               {list.map((item) => {
                 return (
-                  <li key={item.name}>
+                  <li key={item.name} >
                     <a href={item.link}>{item.name}</a>
                   </li>
                 )
