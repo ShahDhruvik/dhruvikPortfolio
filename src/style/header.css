@@ -1,5 +1,5 @@
 .pfHeader {
-  @apply z-20 flex flex-row items-center justify-between px-5 sm:px-10 md:pr-32 shadow-lg  h-16 text-white;
+  @apply z-20 flex flex-row items-center justify-between top-0 left-0 px-5 sm:px-10 md:pr-32 shadow-lg  h-16 text-white;
 
   & > h1 {
     @apply text-lg  font-bold text-black;
@@ -27,9 +27,7 @@
         & > li {
           @apply relative tracking-wide;
 
-          
-
-          & > a::after{
+          & > a::after {
             content: '';
             position: absolute;
             z-index: 10;
@@ -43,7 +41,7 @@
             transition: width 500ms ease-in-out 100ms;
           }
 
-          &> a:hover::after{
+          & > a:hover::after {
             width: 100%;
           }
         }
@@ -51,3 +49,45 @@
     }
   }
 }
+
+.frontAni {
+  @apply flex flex-col items-center  justify-center z-30 overflow-visible h-screen bg-slate-900;
+
+  & > p {
+    @apply animate-bounce overflow-visible text-2xl text-gray-200 font-bold sm:text-4xl sm:text-6xl;
+  }
+}
+
+.frontAni {
+  position: absolute;
+  width: 100%;
+  animation-name: frontpage;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-out;
+  top: 0px;
+  left: 0px;
+}
+@keyframes frontpage {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: 0px;
+    left: -1500px;
+
+    opacity: 0;
+  }
+}
+
+/* @keyframes frontText {
+  from {
+    text-opacity: 100%;
+  }
+  to {
+    
+  }
+} */

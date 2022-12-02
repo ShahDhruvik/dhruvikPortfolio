@@ -7,7 +7,7 @@ const FrontAni = () => {
     const interval = setInterval(() => {
       setremove(true)
     }, 2000)
-  }, [])
+  }, [remove])
 
   return (
     <div className={`pfFrontAni ${remove ? 'left-[-1660px]' : 'left-0'}`}>
