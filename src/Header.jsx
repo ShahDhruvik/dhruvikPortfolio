@@ -9,40 +9,52 @@ const Header = () => {
     { name: 'SERVICE', link: './' },
   ]
   const [openBtn, setopenBtn] = useState(false)
-  const openNav=()=>{
+  const openNav = () => {
     setopenBtn(!openBtn)
   }
   return (
     <>
       {/* <FrontAni /> */}
-      <div>
+      
         <div className="pfHeader">
-          <h1>
-            Shah<span>Dhruvik</span>
-          </h1>
-          <div>
-            <button>
-              <img src="menu.svg" alt="menu"  onClick={openNav} className={`${openBtn ? "hidden": "visible"}`}/>
-            </button>
+          <div className="pfNameBtn">
+            <h1>
+              shah<span>Dhruvik</span>
+            </h1>
+            {openBtn == false && (
+              <button>
+                <img src="menu.svg" alt="menu" onClick={openNav} />
+              </button>
+            )}
+          </div>
+          <div className={` ${openBtn ? "pfNavClose pfNavCls" : "hidden"}`}>
             <nav>
               <ul>
-                {list.map((item) => {
-                  return (
-                    <li key={item.name}>
-                      <a href={item.link}>{item.name}</a>
-                    </li>
-                  )
-                })}
+                <li>
+                  <a href="./">ABOUT</a>
+                </li>
+                <li>
+                  <a href="./">CONTACT</a>
+                </li>
+                <li>
+                  <a href="./">EDUCATION</a>
+                </li>
+                <li>
+                  <a href="./">SERVICE</a>
+                </li>
               </ul>
             </nav>
+            <button>
+              <img src="close.svg" alt="menu" onClick={openNav} />
+            </button>
           </div>
         </div>
         <div className="frontAni">
           {/* Hello, I'm Dhruvik Shah */}
           <p>Hello</p>
-        <p>I'm Dhruvik Shah</p>
+          <p>I'm Dhruvik Shah</p>
         </div>
-      </div>
+      
     </>
   )
 }
