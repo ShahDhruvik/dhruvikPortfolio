@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import FrontAni from './FrontAni'
 import './style/header.css'
 const Header = () => {
   const list = [

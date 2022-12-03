@@ -1,0 +1,21 @@
+.pfBanner {
+  @apply z-0 relative   text-gray-900;
+  & > .pfBannerSum {
+    @apply text-gray-900 h-72 sm:h-96 md:h-[450px] lg:h-[600px] w-full flex flex-col justify-start items-center;
+
+    & > h1 {
+      @apply px-10 pt-10 sm:pt-16 md:pt-20 lg:pt-36 pb-5 text-center uppercase text-sm sm:text-base md:text-lg lg:text-xl font-extrabold;
+    }
+
+    & > p {
+      @apply px-10 sm:px-14  text-xs  sm:text-sm md:text-base lg:text-lg  text-center font-bold;
+    }
+  }
+  & > .pfBannerImg {
+    @apply absolute z-[-10] opacity-80 top-0 left-0 h-full w-full;
+
+    & > img {
+      @apply h-full w-full;
+    }
+  }
+}
