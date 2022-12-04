@@ -31,7 +31,7 @@
 
         & > li {
           & > a {
-            @apply relative text-base font-bold tracking-wider sm:text-lg;
+            @apply relative text-base font-bold  sm:text-lg;
           }
         }
       }
@@ -55,7 +55,7 @@
 
         & > li {
           & > a {
-            @apply relative  sm:text-lg sm:font-semibold;
+            @apply relative sm:tracking-widest sm:text-base sm:font-semibold;
 
             &::after {
               position: absolute;
