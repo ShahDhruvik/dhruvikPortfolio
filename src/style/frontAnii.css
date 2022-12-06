@@ -1,0 +1,39 @@
+.frontAni {
+  @apply flex flex-col items-center  justify-center z-40 overflow-visible h-screen bg-slate-900;
+
+  & > p {
+    @apply animate-bounce overflow-visible text-2xl text-gray-200 font-bold sm:text-4xl sm:text-6xl;
+  }
+}
+
+.frontAni {
+  position: absolute;
+  width: 100%;
+
+  animation-name: frontpage;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-out;
+  top: 0px;
+  left: 0px;
+}
+@keyframes frontpage {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  100% {
+    top: 0px;
+    left: -1500px;
+
+    opacity: 0;
+  }
+}
+
+@keyframes navAni {
+  100% {
+    top: 64px;
+  }
+}
