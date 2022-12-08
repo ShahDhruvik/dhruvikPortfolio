@@ -8,7 +8,7 @@ import FrontAni from './frontAni'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-    <FrontAni />
+    {/* <FrontAni /> */}
     <Header />
     <Banner />
     <Slider />

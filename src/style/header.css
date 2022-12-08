@@ -100,8 +100,8 @@
   }
 }
 
-.frontAni {
-  @apply flex flex-col items-center  justify-center z-40 overflow-visible h-screen bg-slate-900;
+/* .frontAni {
+  @apply flex flex-col items-center  justify-center z-40 overflow-visible min-h-screen bg-slate-900;
 
   & > p {
     @apply animate-bounce overflow-visible text-2xl text-gray-200 font-bold sm:text-4xl sm:text-6xl;
@@ -131,7 +131,7 @@
 
     opacity: 0;
   }
-}
+} */
 
 @keyframes navAni {
   100% {

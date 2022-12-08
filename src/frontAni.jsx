@@ -1,5 +1,5 @@
 import React from 'react'
-import './style/frontAnii.css'
+import './style/frontAni.css'
 
 const FrontAni = () => {
   return (

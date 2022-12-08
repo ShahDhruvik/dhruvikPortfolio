@@ -3,7 +3,7 @@ import './style/banner.css'
 
 const Banner = () => {
   return (
-    <div className="pfBanner">
+    <div className="pfBanner pfBannerImg">
       <div className="pfBannerSum">
         <h1>I design products that delight and inspire people.</h1>
         <p>
@@ -11,9 +11,7 @@ const Banner = () => {
           user-friendly interfaces for fast-growing startups.
         </p>
       </div>
-      <div className="pfBannerImg">
-        <img src="bg.jpg" alt="" />
-      </div>
+      <div className="pfBannerImg">{/* <img src="bg.jpg" alt="" /> */}</div>
     </div>
   )
 }
