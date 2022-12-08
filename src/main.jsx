@@ -11,6 +11,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <FrontAni /> */}
     <Header />
     <Banner />
-    <Slider />
+    {/* <Slider /> */}
   </>,
 )

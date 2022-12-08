@@ -17,7 +17,6 @@
   animation-timing-function: ease-out;
   top: 0px;
   left: 0px;
-  z-index: 60;
 }
 @keyframes frontpage {
   0% {

@@ -3,8 +3,8 @@ import './style/banner.css'
 
 const Banner = () => {
   return (
-    <div className="pfBanner pfBannerImg">
-      <div className="pfBannerSum">
+    <div className="pfBanner pfBannerImg ">
+      <div className="pfBannerSum ">
         <h1>I design products that delight and inspire people.</h1>
         <p>
           Hi! I’m Dhruvik, a product designer in react language . I create
