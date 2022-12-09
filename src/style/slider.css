@@ -1,7 +1,18 @@
 .sliderWrapper {
-  @apply py-10 relative flex items-center;
+  @apply z-30 bg-[#070636] container mx-auto py-10 relative flex items-center;
 
-  & > .sliderArea::-webkit-scrollbar {
-    display: none;
+  & > .btnSlider {
+    @apply border border-black rounded-full bg-cyan-200 opacity-50 hover:opacity-100;
   }
+}
+
+.sliderArea::-webkit-scrollbar {
+  display: none;
+}
+
+.textGradient {
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(17, 147, 102), rgb(38, 109, 137));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
