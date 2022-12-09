@@ -1,5 +1,5 @@
 .pfBanner {
-  @apply container mx-auto z-0 relative   text-gray-200;
+  @apply container mx-auto z-0 relative text-gray-200;
   & > .pfBannerSum {
     @apply text-gray-200 object-top  h-screen w-full flex flex-col justify-start items-center;
 

@@ -1,8 +1,8 @@
 .pfHeader {
-  @apply container mx-auto relative bg-slate-200 text-[#070636] h-16;
+  @apply container mx-auto relative  text-[#070636] h-16;
 
   & > .pfNameBtn {
-    @apply absolute bg-white top-0 left-0 z-30 w-full flex flex-row justify-between items-center px-5 h-full shadow-xl;
+    @apply absolute  top-0 left-0 z-30 w-full flex flex-row justify-between items-center px-5 h-full;
 
     & > h1 {
       @apply text-base sm:text-lg md:text-xl font-bold;

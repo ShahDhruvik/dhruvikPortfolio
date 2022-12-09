@@ -1,5 +1,5 @@
 .sliderWrapper {
-  @apply z-30 bg-[#070636] container mx-auto py-10 relative flex items-center;
+  @apply z-30  container mx-auto py-10 relative flex items-center;
 
   & > .btnSlider {
     @apply border border-black rounded-full bg-cyan-200 opacity-50 hover:opacity-100;
